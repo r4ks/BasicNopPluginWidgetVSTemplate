@@ -1,0 +1,180 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Nop.Plugin.Widgets.PluginName</Name>
+    <Description>Basic nopCommerce Plugin with Widget on dashboard</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Nop.Plugin.Widgets.PluginName</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.jpg</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+	<CustomParameters>
+		<CustomParameter Name="$Entity$" Value="PluginName"/>
+	    <CustomParameter Name="$lce$" Value="pluginName"/>
+	    <CustomParameter Name="$lceplural$" Value="pluginNames"/>
+		<CustomParameter Name="$ucprojectname$" Value="Module"/>
+	    <CustomParameter Name="$lcprojectname$" Value="module"/>
+    </CustomParameters>
+    <Project TargetFileName="Nop.Plugin.Widgets.$ucprojectname$.csproj" File="Nop.Plugin.Widgets.HumanResource.csproj" ReplaceParameters="true">
+      <Folder Name="Core" TargetFolderName="Core">
+        <Folder Name="Caching" TargetFolderName="Caching">
+          <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$CacheEventConsumer.cs">EmployeeCacheEventConsumer.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Domains" TargetFolderName="Domains">
+          <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+            <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$.cs">Employee.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Settings.cs">EmployeeSettings.cs</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder Name="Data" TargetFolderName="Data">
+        <Folder Name="Mapping" TargetFolderName="Mapping">
+          <Folder Name="Builders" TargetFolderName="Builders">
+            <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+              <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Builder.cs">EmployeeBuilder.cs</ProjectItem>
+            </Folder>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="NameCompatibility.cs">NameCompatibility.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Migrations" TargetFolderName="Migrations">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Indexes.cs">Indexes.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SchemaMigration.cs">SchemaMigration.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Common" TargetFolderName="Common">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IPluginPdfService.cs">IPluginPdfService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginLinksDefaults.cs">PluginLinksDefaults.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginPdfService.cs">PluginPdfService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="ExportImport" TargetFolderName="ExportImport">
+          <Folder Name="Help" TargetFolderName="Help">
+            <ProjectItem ReplaceParameters="true" TargetFileName="PropertyByName.cs">PropertyByName.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="PropertyManager.cs">PropertyManager.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IPluginExportManager.cs">IPluginExportManager.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IPluginImportManager.cs">IPluginImportManager.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginExportManager.cs">PluginExportManager.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginImportManager.cs">PluginImportManager.cs</ProjectItem>
+        </Folder>
+        <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+          <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Service.cs">EmployeeService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="I$Entity$Service.cs">IEmployeeService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Nop$Entity$Defaults.cs">NopEmployeeDefaults.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Installation" TargetFolderName="Installation">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtraInstallationService.cs">ExtraInstallationService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IExtraInstallationService.cs">IExtraInstallationService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Security" TargetFolderName="Security">
+          <ProjectItem ReplaceParameters="true" TargetFileName="APermissionProvider.cs">APermissionProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Web" TargetFolderName="Web">
+        <Folder Name="Areas" TargetFolderName="Areas">
+          <Folder Name="Admin" TargetFolderName="Admin">
+            <Folder Name="Controllers" TargetFolderName="Controllers">
+              <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Controller.cs">EmployeeController.cs</ProjectItem>
+              </Folder>
+              <Folder Name="Settings" TargetFolderName="Settings">
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$SettingController.cs">EmployeeSettingController.cs</ProjectItem>
+              </Folder>
+            </Folder>
+            <Folder Name="Factories" TargetFolderName="Factories">
+              <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$ModelFactory.cs">EmployeeModelFactory.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$SettingModelFactory.cs">EmployeeSettingModelFactory.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="I$Entity$ModelFactory.cs">IEmployeeModelFactory.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="I$Entity$SettingModelFactory.cs">IEmployeeSettingModelFactory.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="IPluginBaseAdminModelFactory.cs">IPluginBaseAdminModelFactory.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="PluginBaseAdminModelFactory.cs">PluginBaseAdminModelFactory.cs</ProjectItem>
+            </Folder>
+            <Folder Name="Models" TargetFolderName="Models">
+              <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$ListModel.cs">EmployeeListModel.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Model.cs">EmployeeModel.cs</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$SearchModel.cs">EmployeeSearchModel.cs</ProjectItem>
+              </Folder>
+              <Folder Name="Settings" TargetFolderName="Settings">
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$SettingsModel.cs">EmployeeSettingsModel.cs</ProjectItem>
+              </Folder>
+            </Folder>
+            <Folder Name="Validators" TargetFolderName="Validators">
+              <Folder Name="HumanResource" TargetFolderName="$ucprojectname$">
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$Validator.cs">EmployeeValidator.cs</ProjectItem>
+              </Folder>
+            </Folder>
+            <Folder Name="Views" TargetFolderName="Views">
+              <Folder Name="Employee" TargetFolderName="$Entity$">
+                <ProjectItem ReplaceParameters="true" TargetFileName="_CreateOrUpdate.cshtml">_CreateOrUpdate.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_CreateOrUpdate.Display.cshtml">_CreateOrUpdate.Display.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_CreateOrUpdate.Info.cshtml">_CreateOrUpdate.Info.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_CreateOrUpdate.Mappings.cshtml">_CreateOrUpdate.Mappings.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_CreateOrUpdate.Seo.cshtml">_CreateOrUpdate.Seo.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Create.cshtml">Create.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Edit.cshtml">Edit.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="List.cshtml">List.cshtml</ProjectItem>
+              </Folder>
+              <Folder Name="Setting" TargetFolderName="Setting">
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.AdditionalSections.cshtml">_Employee.AdditionalSections.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.ExportImport.cshtml">_Employee.ExportImport.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.$ucprojectname$Pages.cshtml">_Employee.HumanResourcePages.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.Performance.cshtml">_Employee.Performance.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.Search.cshtml">_Employee.Search.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$.Share.cshtml">_Employee.Share.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="$Entity$.cshtml">Employee.cshtml</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="Components" TargetFolderName="Components">
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ucprojectname$StatsComponent.cs">HumanResourceStatsComponent.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Content" TargetFolderName="Content">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Styles.css">Styles.css</ProjectItem>
+        </Folder>
+        <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+          <Folder Name="Cache" TargetFolderName="Cache">
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelCacheEventConsumer.cs">ModelCacheEventConsumer.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="NopModelCacheDefaults.cs">NopModelCacheDefaults.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Mapper" TargetFolderName="Mapper">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AdminMapperConfiguration.cs">AdminMapperConfiguration.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginNopStartup.cs">PluginNopStartup.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PluginWidgetZones.cs">PluginWidgetZones.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RouteProvider.cs">RouteProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ViewLocationExpander.cs">ViewLocationExpander.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Validators" TargetFolderName="Validators" />
+        <Folder Name="Views" TargetFolderName="Views">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$Statistics.cshtml">_EmployeeStatistics.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_$Entity$Statistics.cshtml">vstg0001.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">vstg0002.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ucprojectname$StatsWidget.cshtml">HumanResourceStatsWidget.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="$ucprojectname$StatsWidget.cshtml">vstg0003.cshtml</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Web.Framework" TargetFolderName="Web.Framework">
+        <Folder Name="Factories" TargetFolderName="Factories" />
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ucprojectname$Defaults.cs">HumanResourceDefaults.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$ucprojectname$Plugin.cs">HumanResourcePlugin.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="logo.jpg">logo.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="plugin.json">plugin.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Readme.md">Readme.md</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
