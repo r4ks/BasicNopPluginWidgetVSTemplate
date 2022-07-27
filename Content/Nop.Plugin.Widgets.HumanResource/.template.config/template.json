@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "Ricks",
+    "classifications": ["Console"],
+    "identity": "ricks.dev.console.generator",
+    "name": "ricksGen",
+    "shortName": "ricksGen",
+    "tags": {
+        "type": "project",
+        "languague": "C#"
+    },
+    "sourceName": "HumanResource",
+    "symbols": {
+        "entity": {
+            "replaces": "Employee",
+            "fileRename": "Employee",
+            "isRequired": true,
+            "type":"parameter",
+            "datatype": "text",
+            "defaultValue": "CustomTable",
+            "description": "Main Entity Name On the Plugin."
+        },
+        "entityDerivativesLower": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+                "source": "entity",
+                "toLower": true
+            },
+            "replaces": "employee"
+        },
+        "lowerNameSpace": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+                "source": "sourceName",
+                "toLower": true
+            },
+            "replaces": "humanResources"
+        }
+    }
+}
