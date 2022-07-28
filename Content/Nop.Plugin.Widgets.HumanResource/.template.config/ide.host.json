@@ -7,7 +7,8 @@
       "name": {
         "text": "Initial Entity Name"
       },
-      "isVisible": "true"
+      "isVisible": "true",
+      "description": "Entity Name Without Spaces"
     }
   ]
 }

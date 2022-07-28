@@ -9,8 +9,9 @@
         "type": "project",
         "languague": "C#"
     },
-    "sourceName": "HumanResource",
-    "defaultName": "SuperModule",
+    "sourceName": "Nop.Plugin.Widgets.HumanResource",
+    "defaultName": "Nop.Plugin.Widgets.SuperPlugin",
+    "preferNameDirectory": false,
     "symbols": {
         "Framework": {
             "type": "parameter",
@@ -29,6 +30,41 @@
             "replaces": "net6.0",
             "defaultValue": "net6.0"
 
+        },
+        "rootFolder": {
+            "type": "generated",
+            "generator": "join",
+            "parameters": {
+                "symbols": [
+                    {
+                        "type": "const",
+                        "value": "Nop"
+                    },
+                    {
+                        "type": "const",
+                        "value": "Plugin"
+                    },
+                    {
+                        "type": "const",
+                        "value": "Widgets"
+                    },
+                    {
+                        "type": "ref",
+                        "value": "name"
+                    }
+                ],
+                "separator": "."
+            },
+            "fileRename": "Nop.Plugin.Widgets.HumanResource"
+        },
+        "module": {
+            "replaces": "HumanResource",
+            "fileRename": "HumanResource",
+            "isRequired": true,
+            "type":"parameter",
+            "datatype": "text",
+            "defaultValue": "SuperModule",
+            "description": "Main Module Name for the Entity On the Plugin. No Spaces and CamelCase please!"
         },
         "entity": {
             "replaces": "Employee",
@@ -56,6 +92,23 @@
                 "toLower": true
             },
             "replaces": "humanResources"
+        },
+        "replaceMenuItemLabel": {
+            "type": "generated",
+            "generator": "coalesce",
+            "parameters": {
+                "sourceVariableName": "sourceName",
+                "fallbackVariableName": "defaultName"
+            },
+            "replaces": "Human Resource"
+        }
+    },
+    "forms": {
+        "kebapCase": {
+            "identifier": "kebabCase"
+        },
+        "camelCase": {
+            "identifier": "firstUpperCase"
         }
     }
 }
