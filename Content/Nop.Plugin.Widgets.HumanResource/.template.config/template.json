@@ -3,8 +3,8 @@
     "author": "Ricks",
     "classifications": ["Console"],
     "identity": "ricks.dev.console.generator",
-    "name": "ricksGen",
-    "shortName": "ricksGen",
+    "name": "Basic Nop Plugin With Widget",
+    "shortName": "basic-nop",
     "tags": {
         "type": "project",
         "languague": "C#"
