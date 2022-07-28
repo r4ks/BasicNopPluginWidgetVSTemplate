@@ -3,6 +3,13 @@
   "icon": "icon.png",
   "symbolInfo": [
     {
+      "id": "title",
+      "name": {
+        "text": "Plugin Title"
+      },
+      "isVisible": "true"
+    },
+    {
       "id": "entity",
       "name": {
         "text": "Initial Entity Name"

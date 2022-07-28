@@ -9,9 +9,8 @@
         "type": "project",
         "languague": "C#"
     },
-    "sourceName": "Nop.Plugin.Widgets.HumanResource",
     "defaultName": "Nop.Plugin.Widgets.SuperPlugin",
-    "preferNameDirectory": false,
+    "preferNameDirectory": true,
     "symbols": {
         "Framework": {
             "type": "parameter",
@@ -30,32 +29,6 @@
             "replaces": "net6.0",
             "defaultValue": "net6.0"
 
-        },
-        "rootFolder": {
-            "type": "generated",
-            "generator": "join",
-            "parameters": {
-                "symbols": [
-                    {
-                        "type": "const",
-                        "value": "Nop"
-                    },
-                    {
-                        "type": "const",
-                        "value": "Plugin"
-                    },
-                    {
-                        "type": "const",
-                        "value": "Widgets"
-                    },
-                    {
-                        "type": "ref",
-                        "value": "name"
-                    }
-                ],
-                "separator": "."
-            },
-            "fileRename": "Nop.Plugin.Widgets.HumanResource"
         },
         "module": {
             "replaces": "HumanResource",
@@ -93,14 +66,35 @@
             },
             "replaces": "humanResources"
         },
-        "replaceMenuItemLabel": {
+        "title": {
+            "type": "parameter",
+            "replaces": "Human Resource",
+            "isRequired": true,
+            "datatype": "text",
+            "defaultValue": "Super Title",
+            "description": "The Plugins Title"
+        },
+        "generateMigrationDate": {
             "type": "generated",
-            "generator": "coalesce",
+            "generator": "now",
             "parameters": {
-                "sourceVariableName": "sourceName",
-                "fallbackVariableName": "defaultName"
+                "format": "yyyy-MM-dd hh:mm:ss"
             },
-            "replaces": "Human Resource"
+            "replaces": "2022-07-04 15:36:00"
+
+        },
+        "generateNewDateForIndexes": {
+            "type": "generated",
+            "generator": "now",
+            "parameters": {
+                "format": "yyyy/MM/dd hh:mm:ss:fffffff"
+            },
+            "replaces": "2020/03/13 09:36:08:9037677"
+        }
+    },
+    "forms": {
+        "capitalized": {
+            "identifier": "firstUpperCase"
         }
     }
 }
