@@ -33,3 +33,6 @@ You have to only edit the last part on the project name.
 
 
 ![naming entity, module and title of menu item](https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/blob/master/renaming.png?raw=true)
+
+Clean the project after being generated then build it!
+![clean before build or rebuild](https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/blob/master/clean.png?raw=true)
