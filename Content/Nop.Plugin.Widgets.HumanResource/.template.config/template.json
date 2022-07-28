@@ -64,7 +64,7 @@
             "type":"parameter",
             "datatype": "text",
             "defaultValue": "SuperModule",
-            "description": "Main Module Name for the Entity On the Plugin. No Spaces and CamelCase please!"
+            "description": "Main Module Name for the Entity On the Plugin. (CamelCase)"
         },
         "entity": {
             "replaces": "Employee",
@@ -73,7 +73,7 @@
             "type":"parameter",
             "datatype": "text",
             "defaultValue": "SuperTable",
-            "description": "Main Entity Name On the Plugin."
+            "description": "Main Entity Name On the Plugin (CamelCase and not pluralized)."
         },
         "entityDerivativesLower": {
             "type": "generated",
@@ -101,14 +101,6 @@
                 "fallbackVariableName": "defaultName"
             },
             "replaces": "Human Resource"
-        }
-    },
-    "forms": {
-        "kebapCase": {
-            "identifier": "kebabCase"
-        },
-        "camelCase": {
-            "identifier": "firstUpperCase"
         }
     }
 }

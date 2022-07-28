@@ -7,16 +7,14 @@
       "name": {
         "text": "Initial Entity Name"
       },
-      "isVisible": "true",
-      "description": "Entity Name in CamelCase"
+      "isVisible": "true"
     },
     {
       "id": "module",
       "name": {
         "text": "Entity Module Name"
       },
-      "isVisible": true,
-      "description": "Module Name For Initial Entity in CamelCase"
+      "isVisible": true
     }
   ]
 }
