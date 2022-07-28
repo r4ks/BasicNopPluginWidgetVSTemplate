@@ -36,3 +36,5 @@ You have to only edit the last part on the project name.
 
 Clean the project after being generated then build it!
 ![clean before build or rebuild](https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/blob/master/clean.png?raw=true)
+
+After the solution build and run, you can install the plugin on the configurations > local plugins
