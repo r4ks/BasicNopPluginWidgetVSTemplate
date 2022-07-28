@@ -3,49 +3,11 @@
   "icon": "icon.png",
   "symbolInfo": [
     {
-      "id": "AuthorName",
+      "id": "entity",
       "name": {
-        "text": "Author Name"
+        "text": "Initial Entity Name"
       },
       "isVisible": "true"
-    },
-    {
-      "id": "SiteTitle",
-      "name": {
-        "text": "Site title"
-      },
-      "isVisible": "true"
-    }
-  ],
-  "supportedAuthentications": [
-    {
-      "auth": "None",
-      "authenticationType": "NoAuth",
-      "allowUnsecured": true
-    },
-    {
-      "auth": "Individual",
-      "authenticationType": "IndividualAuth",
-      "b2cAuthenticationOptions": "CloudExisting"
-    },
-    {
-      "auth": "Individual",
-      "authenticationType": "IndividualAuth",
-      "b2cAuthenticationOptions": "Local"
-    },
-    {
-      "auth": "SingleOrg",
-      "authenticationType": "OrgAuth",
-      "orgAuthenticationOptions": "SSO"
-    },
-    {
-      "auth": "MultiOrg",
-      "authenticationType": "OrgAuth",
-      "orgAuthenticationOptions": "MultiOrg"
-    },
-    {
-      "auth": "Windows",
-      "authenticationType": "WindowsAuth"
     }
   ]
 }

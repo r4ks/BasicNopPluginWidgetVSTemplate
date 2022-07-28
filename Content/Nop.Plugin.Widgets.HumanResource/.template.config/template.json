@@ -10,14 +10,33 @@
         "languague": "C#"
     },
     "sourceName": "HumanResource",
+    "defaultName": "SuperModule",
     "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "net6.0",
+                    "description": "Target .net 6"
+                },
+                {
+                    "choice": "net7.0",
+                    "description": "Target .net 7"
+                }
+            ],
+            "replaces": "net6.0",
+            "defaultValue": "net6.0"
+
+        },
         "entity": {
             "replaces": "Employee",
             "fileRename": "Employee",
             "isRequired": true,
             "type":"parameter",
             "datatype": "text",
-            "defaultValue": "CustomTable",
+            "defaultValue": "SuperTable",
             "description": "Main Entity Name On the Plugin."
         },
         "entityDerivativesLower": {
