@@ -28,7 +28,8 @@ dotnet new -u .\Content\Nop.Plugin.Widgets.HumanResource
 
 When using the template you can find it on when creating a new project into your solution on console categories.
 Be sure to choose the destination folder to be the src/Plugins
-![adding project destination and project name](http://url/to/https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/target.png)
+You have to only edit the last part on the project name.
+![adding project destination and project name](https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/blob/master/target.png?raw=true)
 
 
-![naming entity, module and title of menu item](http://url/to/https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/renaming.png)
+![naming entity, module and title of menu item](https://github.com/r4ks/BasicNopPluginWidgetVSTemplate/blob/master/renaming.png?raw=true)
