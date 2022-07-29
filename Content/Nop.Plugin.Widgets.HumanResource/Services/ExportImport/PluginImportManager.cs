@@ -104,7 +104,7 @@ namespace Nop.Plugin.Widgets.HumanResource.Services.ExportImport
                 {
                     var existingBinary = await _pictureService.LoadPictureBinaryAsync(existingPicture);
                     //picture binary after validation (like in database)
-                    var validatedPictureBinary = await _pictureService.ValidatePictureAsync(newPictureBinary, mimeType, name);
+                    var validatedPictureBinary = await _pictureService.ValidatePictureAsync(newPictureBinary, mimeType);
                     if (existingBinary.SequenceEqual(validatedPictureBinary) ||
                         existingBinary.SequenceEqual(newPictureBinary))
                     {

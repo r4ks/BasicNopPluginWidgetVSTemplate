@@ -187,6 +187,16 @@ namespace Nop.Plugin.Widgets.HumanResource
             return typeof(HumanResourceStatsComponent);
         }
 
+        /// <summary>
+        /// Defines the Widget component name.
+        /// </summary>
+        /// <param name="widgetZone"></param>
+        /// <returns></returns>
+        public string GetWidgetViewComponentName(string widgetZone)
+        {
+            return "StatsWidget";
+        }
+
         #region Helpers
         /// <summary>
         /// Add Localized Strings into the Localized Dictionary from Localization Service.
