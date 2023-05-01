@@ -64,7 +64,7 @@ InstallPermissionsAsync() method install a key into the permission system on the
 Certify that this file exists, and check the "SupportedVersions" property that that should be like the running nopCommerce version.
 
 ## Views
-Create your views inside Web/Areas/Admin/Views/{GroupName}/??????.cshtml.
+Create your views inside Areas/Admin/Views/{GroupName}/??????.cshtml.
 Public Views can be saved inside the root folder Views if you want.
 - Certify that the view file has properties set to Content and Always copy!
   Or check if it's included to be copied inside the projects .csproj file.
@@ -73,7 +73,7 @@ Public Views can be saved inside the root folder Views if you want.
 ## Models
 Models are classes that implements BaseNopEntityModel.
 
-Web/Areas/Admin/Models is the common place to save the Views related Models
+Areas/Admin/Models is the common place to save the Views related Models
 *Always decorate each property inside the Model with [NopResourceDisplayName( "put.your.special.localized.string.here")]
 *Thre is a inner class named Labels witch holds the localized strings but you can put your localized strings whatever place you want, it's only for re-use purporse, to avoid misstyping, and get compilators checking for free!
 
@@ -142,7 +142,7 @@ You can do the mapping extending NopEntityBuilder<YourDomain> and overriding the
 -Migrations are saved at PluginFolder/Data/SchemaMigration.cs a class that extends AutoReversingMigration class.
 
 ## Model Factories
-  look for files with similar names like Web/Areas/Admin/Factories/??????Factory
+  look for files with similar names like Areas/Admin/Factories/??????Factory
   Factories will help you get data from service -> database -> EntityModel(a DTO)  -> Controller -> View Components!
 
 ## Services

@@ -9,7 +9,7 @@ using Nop.Plugin.Widgets.HumanResource.Core.Domains.HumanResource;
 using Nop.Services.Plugins;
 using Nop.Web.Framework.Models;
 
-namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure.Mapper
+namespace Nop.Plugin.Widgets.HumanResource.Infrastructure.Mapper
 {
     /// <summary>
     /// AutoMapper configuration for admin area models

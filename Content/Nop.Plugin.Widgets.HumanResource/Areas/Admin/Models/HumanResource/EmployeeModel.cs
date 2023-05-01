@@ -13,9 +13,9 @@ namespace Nop.Plugin.Widgets.HumanResource.Areas.Admin.Models.HumanResource
         ILocalizedModel<EmployeeLocalizedModel>, IStoreMappingSupportedModel
     {
         #region Views file path
-        public const string CREATE_VIEW = "~/Plugins/Widgets.HumanResource/Web/Areas/Admin/Views/Employee/Create.cshtml";
-        public const string CREATE_OR_UPDATE_VIEW = "~/Plugins/Widgets.HumanResource/Web/Areas/Admin/Views/Employee/_CreateOrUpdate.cshtml";
-        public const string EDIT_VIEW = "~/Plugins/Widgets.HumanResource/Web/Areas/Admin/Views/Employee/Edit.cshtml";
+        public const string CREATE_VIEW = "~/Plugins/Nop.Plugin.Widgets.HumanResource/Areas/Admin/Views/Employee/Create.cshtml";
+        public const string CREATE_OR_UPDATE_VIEW = "~/Plugins/Nop.Plugin.Widgets.HumanResource/Areas/Admin/Views/Employee/_CreateOrUpdate.cshtml";
+        public const string EDIT_VIEW = "~/Plugins/Nop.Plugin.Widgets.HumanResource/Areas/Admin/Views/Employee/Edit.cshtml";
         #endregion
 
         #region Ctor

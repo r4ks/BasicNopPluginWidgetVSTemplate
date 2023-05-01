@@ -6,7 +6,7 @@ using Nop.Plugin.Widgets.HumanResource.Core.Domains.HumanResource;
 using Nop.Services.Events;
 using Nop.Services.Plugins;
 
-namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure.Cache
+namespace Nop.Plugin.Widgets.HumanResource.Infrastructure.Cache
 {
     /// <summary>
     /// Model cache event consumer (used for caching of presentation layer models)

@@ -1,6 +1,6 @@
 ﻿using Nop.Core.Caching;
 
-namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure.Cache
+namespace Nop.Plugin.Widgets.HumanResource.Infrastructure.Cache
 {
     public static partial class NopModelCacheDefaults
     {
@@ -8,7 +8,7 @@ namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure.Cache
         /// Key for nopCommerce.com news cache
         /// </summary>
         public static CacheKey OfficialNewsModelKey => new("Nop.pres.admin.official.news");
-        
+
         /// <summary>
         /// Key for employees caching
         /// </summary>

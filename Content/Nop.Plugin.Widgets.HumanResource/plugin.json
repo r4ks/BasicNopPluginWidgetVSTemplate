@@ -1,7 +1,7 @@
 ﻿{
   "Group": "Widgets",
   "FriendlyName": "Human Resource Plugin",
-  "SystemName": "Widgets.HumanResource",
+  "SystemName": "Nop.Plugin.Widgets.HumanResource",
   "Version": "1.01",
   "SupportedVersions": [ "4.50" ],
   "Author": "Nitro Erp Dev Team 2022.",

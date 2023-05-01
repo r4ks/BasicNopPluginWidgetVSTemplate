@@ -31,7 +31,7 @@ using System.IO;
 using Nop.Plugin.Widgets.HumanResource.Core.Domains.HumanResource;
 using Nop.Plugin.Widgets.HumanResource.Services.Common;
 
-namespace Nop.Plugin.Widgets.HumanResource.Web.Areas.Admin.Controllers.HumanResource
+namespace Nop.Plugin.Widgets.HumanResource.Areas.Admin.Controllers.HumanResource
 {
     public partial class EmployeeController : BaseAdminController
     {

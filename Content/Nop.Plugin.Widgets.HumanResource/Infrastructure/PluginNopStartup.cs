@@ -4,14 +4,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Nop.Core.Infrastructure;
 using Nop.Plugin.Widgets.HumanResource.Areas.Admin.Factories;
-using Nop.Plugin.Widgets.HumanResource.Web.Infrastructure;
-using Nop.Plugin.Widgets.HumanResource.Services;
 using Nop.Plugin.Widgets.HumanResource.Services.ExportImport;
 using Nop.Plugin.Widgets.HumanResource.Services.HumanResource;
 using Nop.Plugin.Widgets.HumanResource.Services.Installation;
 using Nop.Plugin.Widgets.HumanResource.Services.Common;
 
-namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure
+namespace Nop.Plugin.Widgets.HumanResource.Infrastructure
 {
     /// <summary>
     /// Represents object for the configuring services on application startup

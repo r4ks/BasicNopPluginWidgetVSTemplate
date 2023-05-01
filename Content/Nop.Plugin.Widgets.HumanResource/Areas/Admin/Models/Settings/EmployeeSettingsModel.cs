@@ -16,7 +16,7 @@ namespace Nop.Plugin.Widgets.HumanResource.Areas.Admin.Models.Settings
         /// </summary>
         public const string SYSTEM_NAME = "Human Resource settings";
         #region Models View Path
-        public const string View = "~/Plugins/Widgets.HumanResource/Web/Areas/Admin/Views/Setting/Employee.cshtml";
+        public const string View = "~/Plugins/Nop.Plugin.Widgets.HumanResource/Areas/Admin/Views/Setting/Employee.cshtml";
         #endregion
 
         #region Labels

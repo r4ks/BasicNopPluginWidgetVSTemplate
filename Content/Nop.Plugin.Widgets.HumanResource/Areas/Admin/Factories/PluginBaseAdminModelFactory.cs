@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Nop.Core.Caching;
+using Nop.Plugin.Widgets.HumanResource.Infrastructure.Cache;
 using Nop.Plugin.Widgets.HumanResource.Services.HumanResource;
-using Nop.Plugin.Widgets.HumanResource.Web.Infrastructure.Cache;
 using Nop.Services.Localization;
 using Nop.Services.Stores;
 

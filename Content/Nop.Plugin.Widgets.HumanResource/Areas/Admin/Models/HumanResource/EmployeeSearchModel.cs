@@ -10,8 +10,8 @@ namespace Nop.Plugin.Widgets.HumanResource.Areas.Admin.Models.HumanResource
     /// </summary>
     public partial record EmployeeSearchModel : BaseSearchModel
     {
-        public const string LIST_VIEW = "~/Plugins/Widgets.HumanResource/Web/Areas/Admin/Views/Employee/List.cshtml";
-        public const string SYSTEM_NAME = "Widgets.HumanResource.EmployeeListMenuItem";
+        public const string LIST_VIEW = "~/Plugins/Nop.Plugin.Widgets.HumanResource/Areas/Admin/Views/Employee/List.cshtml";
+        public const string SYSTEM_NAME = "Nop.Plugin.Widgets.HumanResource.EmployeeListMenuItem";
         #region Labels
         public static class Labels
         {

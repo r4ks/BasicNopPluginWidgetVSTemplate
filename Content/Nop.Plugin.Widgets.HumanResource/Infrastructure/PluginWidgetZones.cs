@@ -1,4 +1,4 @@
-﻿namespace Nop.Plugin.Widgets.HumanResource.Web.Infrastructure
+﻿namespace Nop.Plugin.Widgets.HumanResource.Infrastructure
 {
     public static partial class PluginWidgetZones
     {
